@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/coordinateLayout"
+    android:background="@drawable/blackcat_pink"
+    tools:context="edu.wm.cs.cs301.amazebyyunwoonoh.ui.PlayActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <View
+        android:layout_height="350dp"
+        android:layout_width="350dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="70dp"
+        android:id="@+id/maze"
+        />
+
+    <ImageButton
+        android:src="@drawable/ic_action_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/up"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="150dp"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless" />
+
+    <ImageButton
+        android:src="@drawable/ic_action_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/right"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="200dp"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        app:layout_anchor="@+id/include2" />
+
+    <ImageButton
+        android:src="@drawable/ic_action_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/left"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="100dp"
+
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        app:layout_anchor="@+id/include2" />
+
+    <ImageButton
+        android:src="@drawable/ic_action_down"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:id="@+id/down"
+        android:layout_marginTop="540dp"
+        android:layout_marginLeft="150dp"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        app:layout_anchor="@+id/include2" />
+
+    <Button
+        android:text="BACK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/manual_back"
+        android:backgroundTint="@color/colorAccent"
+        app:layout_anchor="@+id/include2" />
+
+    <Button
+        android:text="ShortCut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="270dp"
+        android:id="@+id/manual_sc"
+        android:backgroundTint="@color/colorAccent"
+        app:layout_anchor="@+id/include2" />
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="306dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="65dp"
+        android:id="@+id/energy" />
+
+    <TextView
+        android:text="Energy"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textView3" />
+
+    <Switch
+        android:text="Map "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/map" />
+
+    <Switch
+        android:text="Solution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="145dp"
+        android:id="@+id/solution" />
+
+    <Switch
+        android:text="Wall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="280dp"
+        android:id="@+id/wall" />
+
+
+    <include layout="@layout/content_play"
+        android:id="@+id/include2" />
+
+
+</android.support.design.widget.CoordinatorLayout>

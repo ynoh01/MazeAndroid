@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AMazeByYunwooNoh</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_amaze">AMazeActivity</string>
+    <string name="title_activity_generating">GeneratingActivity</string>
+    <string name="title_activity_play">PlayActivity</string>
+    <string name="title_activity_finish">FinishActivity</string>
+    <string name="title_activity_robot">RobotActivity</string>
+    <string name="title_activity_hungry">HungryActivity</string>
+
+</resources>

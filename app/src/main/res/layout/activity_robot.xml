@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/coordinateLayout"
+    android:background="@drawable/blackcat_pink"
+    tools:context="edu.wm.cs.cs301.amazebyyunwoonoh.ui.RobotActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <View
+        android:layout_height="350dp"
+        android:layout_width="350dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="70dp"
+        android:id="@+id/maze"
+        />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="306dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="65dp"
+        android:id="@+id/energyBar" />
+
+    <TextView
+        android:text="Energy"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textView3" />
+    <Switch
+        android:text="Map "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/map" />
+
+    <Switch
+        android:text="Solution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="145dp"
+        android:id="@+id/solution" />
+
+    <Switch
+        android:text="Wall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="280dp"
+        android:id="@+id/wall" />
+
+    <Button
+        android:text="back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/robot_back" />
+
+    <Button
+        android:text="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="100dp"
+        android:backgroundTint="@color/colorAccent"
+        android:id="@+id/start" />
+
+    <Button
+        android:text="pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="190dp"
+        android:backgroundTint="@color/colorAccent"
+        android:id="@+id/pause" />
+
+    <Button
+        android:text="shortcut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="280dp"
+        android:id="@+id/robot_sc" />
+
+
+
+    <include layout="@layout/content_robot"
+        android:id="@+id/include3" />
+
+</android.support.design.widget.CoordinatorLayout>

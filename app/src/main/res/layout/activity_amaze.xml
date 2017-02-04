@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/coordinateLayout"
+    android:background="#ffe5d7"
+    tools:context=".ui.AMazeActivity">
+
+    <ImageView
+        android:layout_width="328dp"
+        android:layout_height="189dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/catface"
+        android:layout_centerHorizontal ="true"
+        android:id="@+id/imageView" />
+
+
+    <SeekBar
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft = "50dp"
+        android:layout_marginTop="230dp"
+        android:thumb="@mipmap/ic_cat_face"
+        android:max = "16"
+        android:id="@+id/seekBar" />
+
+    <Button
+        android:text="GAME START"
+        android:layout_width="134dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft = "125dp"
+        android:layout_marginTop="480dp"
+        android:backgroundTint="@color/colorAccent"
+        android:id="@+id/newgame" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="300dp"
+        android:entries = "@array/algorithm"
+        android:id="@+id/algo" />
+
+    <Spinner
+        android:layout_width="154dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="370dp"
+        android:entries = "@array/driver"
+        android:id="@+id/driver" />
+
+    <CheckBox
+        android:text="Revisit Existing Maze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="113dp"
+        android:layout_marginTop="430dp"
+        android:id="@+id/checkBox" />
+
+    <TextView
+        android:text="Difficulty Level: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="275dp"
+        android:id="@+id/tv_val" />
+
+    <include layout="@layout/content_amaze"
+        android:id="@+id/include" />
+
+    <TextView
+        android:text="Could you Help me find My mommy?"
+        android:textColor="#404040"
+        android:layout_width ="212dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textSize="34dp"
+        android:id="@+id/textView" />
+
+
+</android.support.design.widget.CoordinatorLayout>
